@@ -173,6 +173,12 @@
 #define STK_CALIB_TENMS			0x00FFFFFF
 /**@}*/
 
+#define TICK_TIMEOUT_NEVER ((uint32_t)-1)
+#define TICK_TIMEOUT_INSTANT ((uint32_t)0)
+
+/* --- Convenience macros -------------------------------------------------- */
+#define TICK_TIMEOUT(_start_, _timeout_) ((tick_count - (_start_) >= (_timeout_)) && ((_timeout_) != TICK_TIMEOUT_NEVER))
+
 /* --- Variable definitions ------------------------------------------------ */
 extern volatile uint32_t tick_count;
 
