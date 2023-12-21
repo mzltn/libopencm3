@@ -173,6 +173,9 @@
 #define STK_CALIB_TENMS			0x00FFFFFF
 /**@}*/
 
+/* --- Variable definitions ------------------------------------------------ */
+extern volatile uint32_t tick_count;
+
 /* --- Function Prototypes ------------------------------------------------- */
 
 BEGIN_DECLS

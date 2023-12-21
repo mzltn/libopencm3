@@ -40,6 +40,8 @@
 /**@{*/
 #include <libopencm3/cm3/systick.h>
 
+volatile uint32_t tick_count = 0;
+
 /*---------------------------------------------------------------------------*/
 /** @brief SysTick Set the Automatic Reload Value.
  *
